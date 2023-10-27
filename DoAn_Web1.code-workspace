@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "D:/Phone/DoAn_Web1"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "web-phone"
+	}
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="shortcut icon" href="img/favicon.ico" />
+
+	<title>Thế giới điện thoại</title>
+
+	<!-- Load font awesome icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+	 crossorigin="anonymous">
+
+	<!-- our files -->
+	<!-- css -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/topnav.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/taikhoan.css">
+	<link rel="stylesheet" href="css/gioHang.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/thanhtoan.css">
+	<!-- js -->
+	<script src="data/products.js"></script>
+	<script src="js/classes.js"></script>
+	<script src="js/dungchung.js"></script>
+	<script src="js/giohang.js"></script>
+	<script src="js/thanhtoan.js"></script>
+
+</head>
+
+<body>
+	<script> addTopNav(); </script>
+
+	<section style="min-height: 85vh">
+		<script> addHeader(); </script>
+
+		<table class="listSanPham" > </table>
+		<div class="payment-box hidden">
+			<h2>Chọn phương thức </br> thanh toán</h2>
+			  <div class="form-pay">
+				<input type="radio" id="cash" name="payment-method" value="cash">
+				<img class='imgPay' src="./img/thanhtoan/Tienmat.png" alt="Tienmat" />
+				<label for="paypal">Thanh toán khi nhận hàng</label>
+			  </div>
+			  <div class="form-pay">
+				<input type="radio" id="bank-transfer" name="payment-method" value="bank-transfer">
+				<img class='imgPay' src="./img//thanhtoan/theATM.jpg" alt="theATM" />
+				<label for="bank-transfer">Thanh toán bằng thẻ</label>
+			  </div>
+			  <div class="btn-container">
+			  <button class='Btn' type="button" onclick="goBackChose()">Quay lại</button>
+			  <button class="Btn" onclick="handleClick(event)">Tiếp tục</button>
+			  </div>
+			</form>
+		  </div>
+		  <div class="infoThanhToan hidden"></div>
+		  <div id="overlay" class="hidden"></div>
+		
+	</section> <!-- End Section -->
+
+	<script>
+		addContainTaiKhoan();
+	</script>
+
+	<div class="footer"><script>addFooter();</script></div>
+
+	<i class="fa fa-arrow-up" id="goto-top-page" onclick="gotoTop()"></i>
+</body>
+
+</html>

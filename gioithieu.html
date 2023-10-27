@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Giới thiệu - Thế giới điện thoại</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        crossorigin="anonymous">
+        
+    <!-- our files -->
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/topnav.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/taikhoan.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/gioithieu.css">
+
+    <!-- js -->
+    <script src="data/products.js"></script>
+	<script src="js/dungchung.js"></script>
+    <script>
+        window.onload = function () {
+            khoiTao();
+            // thêm tags (từ khóa) vào khung tìm kiếm
+            var tags = ["Samsung", "iPhone", "Huawei", "Oppo", "Mobi"];
+            for (var t of tags) addTags(t, "index.html?search=" + t);
+        }
+    </script>
+
+</head>
+
+<body>
+    <script> addTopNav();</script>
+
+    <section style="min-height: 85vh">
+        <script> addHeader(); </script>
+
+        <div class="page-gt">
+            <h4 class="page-header">
+                Giới thiệu
+            </h4>
+            <div class="page-info">
+                <p>Smart Phone Store tại địa chỉ 172, Nguyễn Trãi, Thanh Xuân, Hà Nội là một cửa hàng chuyên cung cấp các sản phẩm smartphone mới nhất và chất lượng cao từ các thương hiệu hàng đầu trên thị trường. Quá trình hình thành của cửa hàng này đã trải qua nhiều giai đoạn phát triển và hoàn thiện.
+                </p>
+                <br />
+                <p>
+                    Ban đầu, Smart Phone Store chỉ là một cửa hàng nhỏ, chuyên bán các sản phẩm điện thoại di động của một số thương hiệu nổi tiếng. Tuy nhiên, nhờ vào sự nỗ lực và quyết tâm của chủ cửa hàng và nhân viên, cửa hàng đã dần dần mở rộng quy mô và đầu tư mở rộng thêm các sản phẩm và dịch vụ khác như phụ kiện điện thoại, dịch vụ sửa chữa và bảo hành.<br />
+                    <br>
+                    Với sự tập trung vào chất lượng sản phẩm và dịch vụ, Smart Phone Store đã dần dần thu hút được sự quan tâm và tin tưởng của khách hàng, từ đó phát triển và mở rộng quy mô kinh doanh.<br />
+                    <br>
+                    Hiện nay, Smart Phone Store tại địa chỉ 172, Nguyễn Trãi, Thanh Xuân, Hà Nội đã trở thành một trong những cửa hàng smartphone được yêu thích và tin cậy tại khu vực này, được nhiều khách hàng lựa chọn để mua sắm và sử dụng các sản phẩm và dịch vụ tại đây.<br />
+                    <br>
+                    Chúng tôi xin chân thành cảm ơn tất cả các khách hàng đã, đang và sẽ ủng hộ chúng tôi.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script> addContainTaiKhoan(); </script>
+
+    <div class="footer">
+        <script>addFooter();</script>
+        
+    </div>
+
+    <i class="fa fa-arrow-up" id="goto-top-page" onclick="gotoTop()"></i>
+</body>
+
+</html>
