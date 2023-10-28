@@ -74,7 +74,7 @@ function addInfoUser(user) {
                     <tr>
                         <td></td>
                         <td> 
-                            <div><button onclick="changePass()">Đồng ý</button></div> 
+                            <div><button onclick="changePass()">Lưu</button></div> 
                         </td>
                     </tr>
                 </table>
@@ -124,16 +124,33 @@ function changePass() {
     var khungChangePass = document.getElementById('khungDoiMatKhau');
     var inps = khungChangePass.getElementsByTagName('input');
     if (inps[0].value != currentUser.pass) {
-        alert('Sai mật khẩu !!');
+        alert('Mật khẩu cũ không đúng !!');
         inps[0].focus();
         return;
     }
-    if (inps[1] == '') {
+    // if (inps[1] == '') {
+    //     inps[1].focus();
+    //     alert('Chưa nhập mật khẩu mới !');
+    // }
+    // if (inps[1].value != inps[2].value) {
+    //     alert('Mật khẩu không khớp');
+    //     inps[2].focus();
+    //     return;
+    // }
+
+    if (inps[0].value === inps[1].value) {
+        alert('Trùng mật khẩu !');
         inps[1].focus();
+        return;
+    }
+
+    if (inps[1].value.trim() === '') {
         alert('Chưa nhập mật khẩu mới !');
+        inps[1].focus();
+        return;
     }
     if (inps[1].value != inps[2].value) {
-        alert('Mật khẩu không khớp');
+        alert('Xác nhận mật khẩu không khớp');
         inps[2].focus();
         return;
     }
